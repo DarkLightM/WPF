@@ -3,10 +3,10 @@
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         Title="StackPanel" Height="220" Width="400" Background="Gray">
     <StackPanel Margin="5">
-        <Label Content="Example"></Label>
-        <Button HorizontalAlignment="Center" Width="50" Margin="5">Button 1</Button>
-        <Button HorizontalAlignment="Center" Width="100" Margin="5">Button 2</Button>
-        <Button HorizontalAlignment="Center" Width="150" Margin="5">Button 3</Button>
-        <Button HorizontalAlignment="Center" Width="200" Margin="5">Button 4</Button>
+        <Label Content="Example" HorizontalAlignment="Center" Margin="5"></Label>
+        <Button Margin="5" MaxWidth="200" MinWidth="100">Button 1</Button>
+        <Button Margin="5" MaxWidth="200" MinWidth="100">Button 2</Button>
+        <Button Margin="5" MaxWidth="200" MinWidth="100">Button 3</Button>
+        <Button Margin="5" MaxWidth="200" MinWidth="100">Button 4</Button>
     </StackPanel>
 </Window>

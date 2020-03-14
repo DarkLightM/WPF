@@ -13,7 +13,7 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 
-namespace WPFTask
+namespace WpfApplication1
 {
     /// <summary>
     /// Логика взаимодействия для MainWindow.xaml
@@ -22,7 +22,19 @@ namespace WPFTask
     {
         public MainWindow()
         {
-            //InitializeComponent();
+            InitializeComponent();
+        }
+
+        private void CheckBox_Checked(object sender, RoutedEventArgs e)
+        {
+            Btn_next.Content = "--> Next other page and window";
+            Btn_prev.Content = "<-- Prev other page and window";
+        }
+
+        private void CheckBox_Unchecked(object sender, RoutedEventArgs e)
+        {
+            Btn_next.Content = "> Next";
+            Btn_prev.Content = "< Prev";
         }
     }
 }
